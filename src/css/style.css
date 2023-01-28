@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .form-label {
+        display: block;
+        opacity: 1;
+        transform: translateY(-2.5em);
+        transform-origin: 0 0
+    }
+
+    .form-input::-moz-placeholder {
+        color: transparent
+    }
+
+    .form-input::placeholder {
+        color: transparent
+    }
+
+    .form-group:focus-within {
+        transform: scale(1.05)
+    }
+
+    .form-input:not(:-moz-placeholder-shown)+.form-label {
+        transform: translateY(-3.2em) scale(.9);
+        opacity: .5
+    }
+
+    .form-input:focus+.form-label,
+    .form-input:not(:placeholder-shown)+.form-label {
+        transform: translateY(-3.2em) scale(.9);
+        opacity: .5
+    }
+
+    .modal::backdrop {
+        background-color: #0000004d
+    }
+
+    .bin:before {
+        content: "bin";
+        display: block;
+        position: absolute;
+        background-color: #e5e5ea;
+        padding: .25em;
+        border-radius: 5px;
+        bottom: 0;
+        left: 2em;
+        white-space: nowrap;
+        transform: scale(0);
+        transition: transform ease-in-out .15s, bottom ease-in-out .15s
+    }
+
+    .bin:hover:before {
+        transform: scale(1);
+        bottom: 100%
+    }
+}

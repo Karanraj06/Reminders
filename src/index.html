@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reminders - By Karanraj</title>
-    <link rel="icon" type="image/png" href="./assets/Reminders-fd8f0b29.png">
-    <link rel="stylesheet" href="./assets/index-a9b2436e.css">
+    <link rel="icon" type="image/png" href="images/reminders.png">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
     <dialog class="max-w-xs bg-white p-8 rounded-lg modal" id="modal">
         <div class="flex items-center justify-between">
             <h1 class="text-xl font-semibold">New Reminder</h1>
-            <button class="bg-[url(Close.svg)] w-3 h-3 opacity-50 hover:opacity-100" id="close" type="button"></button>
+            <button class="bg-[url(../images/close.svg)] w-3 h-3 opacity-50 hover:opacity-100" id="close" type="button"></button>
         </div>
         <div class="mt-5">
             <form method="dialog">
@@ -79,7 +79,8 @@
                         <div class="p-6">
                             <div class="flex items-center justify-between">
                                 <h1 class="title-font text-lg font-medium text-gray-900">Title</h1>
-                                <button class="bg-[url(Close.svg)] w-3 h-3 opacity-50 hover:opacity-100 close-note"
+                                <button
+                                    class="bg-[url(../images/close.svg)] w-3 h-3 opacity-50 hover:opacity-100 close-note"
                                     type="button"></button>
                             </div>
                             <p class="leading-relaxed my-3">Sample Note</p>
@@ -93,10 +94,10 @@
 
     <!-- Bin Starts -->
     <div
-        class="bg-[url(Bin.png)] bg-cover h-[5rem] w-[5rem] fixed bottom-2 right-2 transition-[height,_width] hover:h-[8rem] hover:w-[8rem] bin">
+        class="bg-[url(../images/bin.png)] bg-cover h-[5rem] w-[5rem] fixed bottom-2 right-2 transition-[height,_width] hover:h-[8rem] hover:w-[8rem] bin">
     </div>
     <!-- Bin Ends -->
-    <script src="./assets/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
